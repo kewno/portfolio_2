@@ -1,0 +1,398 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+  font-family: Gilroy, sans-serif;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: #fff; }
+
+header {
+  background: #0C0F17;
+  height: 100vh; }
+  header video {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%; }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 28px 0; }
+    header nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -ms-flex-preferred-size: 1200px;
+      flex-basis: 1200px;
+      margin: 0 auto; }
+      header nav ul li a {
+        display: inline-block;
+        margin-top: 12px;
+        font-size: 16px;
+        text-transform: uppercase; }
+    header nav .logo img {
+      width: 195px;
+      height: 40px;
+      margin-left: 20px; }
+    header nav .switch {
+      display: none;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: 20px;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer; }
+      header nav .switch span {
+        position: absolute;
+        display: inline-block;
+        width: 25px;
+        height: 2px;
+        background: white;
+        border-radius: 1px; }
+        header nav .switch span:first-child {
+          top: 9px; }
+        header nav .switch span:last-child {
+          top: 18px; }
+  header li > a {
+    color: #fff; }
+    header li > a:hover {
+      color: #737478; }
+
+main {
+  background: #FCFCFC; }
+  main .forWhenList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    padding: 150px 0 0; }
+    main .forWhenList .forWhenElement {
+      width: 48%;
+      height: 100%;
+      background: url("img/forWhen1.jpg") no-repeat;
+      -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+      color: #172c5f;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin-bottom: 100px;
+      cursor: pointer;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+      main .forWhenList .forWhenElement:nth-child(2) {
+        background: url("img/forWhen2.jpg") no-repeat; }
+      main .forWhenList .forWhenElement:nth-child(3) {
+        background: url("img/forWhen3.jpg") no-repeat; }
+      main .forWhenList .forWhenElement:nth-child(4) {
+        background: url("img/forWhen4.jpg") no-repeat; }
+      main .forWhenList .forWhenElement:nth-child(5) {
+        background: url("img/forWhen5.jpg") no-repeat; }
+      main .forWhenList .forWhenElement:nth-child(6) {
+        background: url("img/forWhen6.jpg") no-repeat; }
+      main .forWhenList .forWhenElement .plugWhite {
+        width: auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 85px 75px;
+        z-index: 1; }
+        main .forWhenList .forWhenElement .plugWhite:hover {
+          background: rgba(255, 255, 255, 0); }
+      main .forWhenList .forWhenElement:nth-child(2n) {
+        margin-top: 200px; }
+      main .forWhenList .forWhenElement h3 {
+        font-weight: 100;
+        margin-bottom: 29px;
+        font-size: 2.7rem;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+        margin-bottom: 120px;
+        color: #23265D; }
+      main .forWhenList .forWhenElement p {
+        font-weight: 100;
+        font-size: 1.4rem;
+        line-height: 1.7;
+        letter-spacing: .3px;
+        font-weight: 300;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #23265D; }
+  main .mapRussia {
+    background: url("img/mapRussia.jpg") top center;
+    height: 100vh;
+    width: auto; }
+    main .mapRussia .wrapText {
+      max-width: 900px;
+      width: auto;
+      margin: 200px auto;
+      padding-top: 200px; }
+      main .mapRussia .wrapText .pasent {
+        height: 250px; }
+        main .mapRussia .wrapText .pasent div {
+          display: inline-block;
+          padding-bottom: 40px; }
+          main .mapRussia .wrapText .pasent div h3 {
+            display: inline-block;
+            font-weight: 100;
+            font-size: 4.85rem;
+            padding-bottom: 20px; }
+          main .mapRussia .wrapText .pasent div sup {
+            font-size: 2.15rem; }
+        main .mapRussia .wrapText .pasent p {
+          display: inline-block;
+          width: 240px;
+          font-size: 1.15rem;
+          margin-left: 50px;
+          line-height: 1.7;
+          margin-top: 7px; }
+      main .mapRussia .wrapText > p {
+        font-size: 3rem;
+        line-height: 1.4;
+        font-weight: 100; }
+
+footer {
+  background: #121737;
+  padding: 70px 66px; }
+  footer .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .wrap p {
+      font-size: 14px;
+      margin-top: 12px; }
+    footer .wrap .aboutUs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: auto; }
+      footer .wrap .aboutUs li {
+        width: 100px;
+        font-size: 14px;
+        line-height: 1.5; }
+    footer .wrap .social a {
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      border: 1px solid #40465F;
+      border-radius: 50px;
+      margin-right: 35px; }
+      footer .wrap .social a i {
+        display: inline-block;
+        padding: 15px;
+        color: #E0AC34;
+        margin: auto; }
+      footer .wrap .social a:hover {
+        border: 1px solid #fff; }
+    footer .wrap > a {
+      margin-left: auto;
+      margin-top: 12px;
+      font-size: 15px; }
+
+@media (max-width: 1192px) {
+  header nav ul li > a {
+    font-size: 13.5px;
+    margin-top: 14px; }
+  main .forWhenList {
+    padding: 75px 0 0; }
+    main .forWhenList .forWhenElement {
+      width: 100%;
+      margin-bottom: 50px; }
+      main .forWhenList .forWhenElement .plugWhite {
+        padding: 45px 75px; }
+      main .forWhenList .forWhenElement:nth-child(2n) {
+        margin-top: 0; }
+      main .forWhenList .forWhenElement h3 {
+        font-weight: 100;
+        font-size: 2.7rem;
+        line-height: 1.5;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+        color: #23265D; }
+      main .forWhenList .forWhenElement p {
+        font-weight: 100;
+        font-size: 1.4rem;
+        line-height: 1.7;
+        letter-spacing: .3px;
+        font-weight: 300;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #23265D; }
+  footer {
+    padding: 70px 30px; }
+    footer .wrap .social a {
+      margin-right: 20px; } }
+
+@media (max-width: 992px) {
+  main .mapRussia {
+    height: 100vh;
+    padding: 0 10px; }
+    main .mapRussia .wrapText {
+      margin: 150px auto;
+      padding-top: 200px; }
+      main .mapRussia .wrapText .pasent {
+        height: 200px; }
+        main .mapRussia .wrapText .pasent div {
+          padding-bottom: 40px; }
+          main .mapRussia .wrapText .pasent div h3 {
+            display: inline-block;
+            font-weight: 100;
+            font-size: 50px;
+            padding-bottom: 20px; }
+          main .mapRussia .wrapText .pasent div sup {
+            font-size: 25px; }
+        main .mapRussia .wrapText .pasent p {
+          display: inline-block;
+          width: 240px;
+          font-size: 18px;
+          margin-left: 50px;
+          line-height: 1.7;
+          margin-top: 7px; }
+      main .mapRussia .wrapText > p {
+        font-size: 25px;
+        line-height: 1.4;
+        font-weight: 100; }
+  footer {
+    padding: 30px 30px; }
+    footer .wrap {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      footer .wrap > p {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+      footer .wrap .aboutUs {
+        width: 45%;
+        padding-left: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: auto; }
+        footer .wrap .aboutUs li {
+          margin: auto;
+          width: 100px; }
+      footer .wrap .social {
+        width: 35%;
+        margin-left: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+      footer .wrap > a {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3; } }
+
+@media (max-width: 768px) {
+  header nav ul {
+    display: none; }
+  header nav .switch {
+    display: inline-block; }
+  main .mapRussia {
+    height: 40vh; }
+    main .mapRussia .wrapText {
+      margin: 100px auto;
+      padding-top: 100px; }
+      main .mapRussia .wrapText .pasent {
+        height: 150px; }
+        main .mapRussia .wrapText .pasent div {
+          padding-bottom: 40px; }
+          main .mapRussia .wrapText .pasent div h3 {
+            font-size: 40px; }
+          main .mapRussia .wrapText .pasent div sup {
+            font-size: 20px; }
+        main .mapRussia .wrapText .pasent p {
+          display: inline-block;
+          width: 240px;
+          font-size: 16px;
+          margin-left: 50px;
+          line-height: 1.7;
+          margin-top: 7px; }
+      main .mapRussia .wrapText > p {
+        font-size: 20px; }
+  footer {
+    padding: 20px; }
+    footer .wrap .aboutUs {
+      width: 52%;
+      padding-left: auto;
+      margin: auto; }
+    footer .wrap .social {
+      width: 35%;
+      margin-left: auto;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      footer .wrap .social a {
+        margin-right: 10px; } }
+
+@media (max-width: 576px) {
+  main .forWhenList {
+    width: 95%;
+    padding: 50px 0 0; }
+    main .forWhenList .forWhenElement {
+      width: 100%;
+      margin-bottom: 50px; }
+      main .forWhenList .forWhenElement .plugWhite {
+        padding: 25px 25px; }
+      main .forWhenList .forWhenElement:nth-child(2n) {
+        margin-top: 0; }
+      main .forWhenList .forWhenElement h3 {
+        font-size: 20px;
+        margin-bottom: 30px; }
+      main .forWhenList .forWhenElement p {
+        font-size: 15px; }
+  main .mapRussia {
+    height: 25vh; }
+    main .mapRussia .wrapText {
+      margin: 0px auto;
+      padding-top: 50px; }
+      main .mapRussia .wrapText .pasent {
+        height: 80px; }
+        main .mapRussia .wrapText .pasent div h3 {
+          font-size: 40px; }
+        main .mapRussia .wrapText .pasent div sup {
+          font-size: 20px; }
+        main .mapRussia .wrapText .pasent p {
+          display: inline-block;
+          width: 200px;
+          font-size: 14px;
+          margin-left: 15px; }
+      main .mapRussia .wrapText > p {
+        font-size: 14px; }
+  footer {
+    padding: 15px 19px; }
+    footer .wrap > * {
+      width: 100%; }
+    footer .wrap .aboutUs {
+      width: 100%;
+      margin-bottom: 20px; }
+      footer .wrap .aboutUs li a {
+        font-size: 13px; }
+    footer .wrap .social {
+      width: auto;
+      margin: auto;
+      margin-bottom: 20px; } }

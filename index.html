@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<title>ЭР-Телеком</title>
+</head>
+<body>
+<header>
+	<nav>
+		<h1><a href="" class="logo"><img src="img/logoLength.png" alt="logo"></a></h1>
+		<ul>
+ 			<li><a href="">О компании</a></li>
+ 			<li><a href="">Направления</a></li>
+ 			<li><a href="">Инвесторам</a></li>
+ 			<li><a href="">Пресс-Центр</a></li>
+ 			<li><a href="">Карьера</a></li>
+ 			<li><a href="">Контакты</a></li>
+		</ul>
+		<div class="switch">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+	<video id="mainVideo" class="screen" src="img/video1.mp4" visibility="visible" autoplay="autoplay"  muted="muted"></video>
+	<video id="mainVideo2" class="screen" src="img/video2.mp4" muted="muted"></video>
+	<video id="mainVideo3" class="screen" src="img/video3.mp4" muted="muted"></video>
+	<video id="mainVideo4" class="screen" src="img/video4.mp4" muted="muted"></video>
+	
+</header>
+<main>
+	<section class="forWhen">
+		<div class="forWhenList">
+			<div class="forWhenElement">
+				<div class="plugWhite">
+					<h3>Для физических лиц</h3>
+					<p>Лучшие решения для вашего дома: быстрый Интернет, доступное кабельное TV, удобный домашний телефон.</p>
+				</div>
+			</div>
+			<div class="forWhenElement">
+				<div class="plugWhite">
+					<h3>Средний и малый бизнес</h3>
+					<p>Повышаем эффективность бизнес-процессов за счет внедрения современных средств передачи и защиты данных.</p>
+				</div>
+			</div>
+			<div class="forWhenElement">
+				<div class="plugWhite">
+					<h3>Федеральные клиенты</h3>
+					<p>Повышаем эффективность бизнес-процессов за счет внедрения современных средств передачи и защиты данных.</p>
+				</div>
+			</div>
+			<div class="forWhenElement">
+				<div class="plugWhite">
+					<h3>Операторы связи</h3>
+					<p>Предлагаем партнерство и взаимовыгодное сотрудничество.</p>
+				</div>
+			</div>
+			<div class="forWhenElement">
+				<div class="plugWhite">
+					<h3>Инновационные проекты</h3>
+					<p>Предоставляем услуги широкополосного доступа в Интернет и комплексные решения на базе технологий промышленного Интернета вещей (IoT).</p>
+				</div>
+			</div>
+			<div class="forWhenElement">
+				<div class="plugWhite">
+					<h3>Для физических лиц</h3>
+					<p>Лучшие решения для вашего дома: быстрый Интернет, доступное кабельное TV, удобный домашний телефон.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="mapRussia">
+		<div class="wrapText">
+			<div class="pasent">	
+				<div>
+					<h3>80</h3><sup>%</sup>	
+				</div>
+				<p>покрытие территории России по технологии радиодоступа</p>	
+			</div>
+			<p>Одна из крупнейших управляемых оптических сетей в Европе</p>
+		</div>
+	</section>													
+</main>
+<footer>
+	<div class="wrap">
+		<p>© 2001–2021 АО «ЭР-Телеком Холдинг»</p>
+		<ul class="aboutUs">
+			<li><a href="#">Все права защищены</a></li>
+			<li><a href="#">Раскрытие информации</a></li>
+			<li><a href="#">Обработка персональных данных</a></li>
+		</ul>
+		<ul class="social">
+			<a href=""><i class="fab fa-google"></i></a>
+			<a href=""><i class="fab fa-twitter"></i></a>
+			<a href=""><i class="fab fa-youtube"></i></a>
+		</ul>
+		<a href="">Design by <b>KeWNo.</b></a>
+	</div>
+</footer>					
+	
+</body>
+<script>
+// 	let myvid = document.getElementById('mainVideo');
+// let myvids = [
+//   "img/video1.mp4", 
+//   "img/video2.mp4",
+//   "img/video3.mp4",
+//   "img/video4.mp4"
+//   ];
+// let activeVideo = 0;
+// myvid.addEventListener('ended', function(e) {
+  
+//   // let activesource = document.querySelector("#mainVideo source.active");
+//   // let nextsource = document.querySelector("#mainVideo source.active + source") || document.querySelector("#mainVideo source:first-child");
+
+//   // activesource.className = "";
+//   // nextsource.className = "active";
+  
+//   // myvid.src = nextsource.src;
+//   // myvid.play();
+//   activeVideo = (++activeVideo) % myvids.length;
+
+//   // update the video source and play
+//   myvid.src = myvids[activeVideo];
+//   myvid.play();
+// });
+
+let myvid = document.querySelectorAll('.screen');
+
+let activeVideo = 0;
+for (let i = 0; i < myvid.length; i++) {
+	if (i != 0) myvid[i].style.visibility = "hidden";
+	myvid[i].addEventListener('ended', nextVideo);
+}
+
+function nextVideo() {
+  myvid[activeVideo].style.visibility = "hidden";
+
+  //myvid[activeVideo].currentTime = 0;
+  activeVideo = (++activeVideo) % myvid.length;
+  //alert(activeVideo);
+  //alert(1);
+  myvid[activeVideo].style.visibility = "visible";
+
+
+
+  //myvid[activeVideo].currentTime = 0;
+  myvid[activeVideo].play();
+}
+</script>
+
+</html>
